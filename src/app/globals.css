@@ -1,3 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  @apply text-[#fdfdfd] h-[100vh] flex items-center bg-blue-50;
+
+  .wrap-base {
+    @apply w-[1400px] mx-auto;
+  }
+
+  .bg {
+    @apply bg-[#01001e];
+  }
+}

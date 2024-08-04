@@ -9,6 +9,7 @@ import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
+// SEO配置
 export const metadata: Metadata = {
   title: "1梦的主页",
   description: "欢迎来到1梦的主页呀 (*╹▽╹*)",
@@ -21,7 +22,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="zh">
-      <body className={inter.className}>{children}</body>
+      <body className={inter.className}>
+        {children}
+      </body>
     </html>
   );
 }
