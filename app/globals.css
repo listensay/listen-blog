@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-  @apply text-[#fdfdfd] h-[100vh] flex items-center bg-blue-50;
+  @apply text-[#fdfdfd] h-[100vh] flex items-center bg-[#bfdbfe];
 
   .wrap-base {
     @apply w-[1400px] mx-auto;
