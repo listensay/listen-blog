@@ -13,7 +13,7 @@ export default function Home() {
             <div className='flex-1'>
               <div className='w-full h-80 bg-[#3C37D2] p-8'>
                 <h2 className={`text-6xl mb-2 ${ styles.cute }`}>Welcom to</h2>
-                <h2 className={`text-6xl mb-2 ${ styles.cute }`}>Milk Homepage</h2>
+                <h2 className={`text-6xl mb-2 ${ styles.cute }`}>1梦 Homepage</h2>
                 <div className='text-sm text-gray-300'>Listen a 22 years old boy story</div>
               </div>
             </div>
