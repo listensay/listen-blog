@@ -1,7 +1,8 @@
 'use client';
 
 import { memo, useState } from "react";
-import styles from './menu.module.css'
+// import styles from './menu.module.css'
+import { AppWrap } from './style'
 const Menu = memo(() => {
 
   const [navgation] = useState([
@@ -25,16 +26,16 @@ const Menu = memo(() => {
   const [active, setActive] = useState(1)
 
   return (
-    <div className="h-full w-64 bg-[#0c0b24]">
+    <AppWrap className="h-full w-64 bg-[#0c0b24]">
       <h1 className="text-[#b082e7] font-bold text-xl h-16 flex justify-center items-center">Milk Homepage</h1>
 
       <nav className="ml-6 mt-6">
-        <ul>
+        <ul className="list">
           {
             navgation.map(item => {
               return (
                 <li 
-                  className={`mb-4 text-white cursor-pointer hover:text-[#b082e7] ${active === item.id ? styles.active : ''}`}
+                  className={`item mb-4 text-white cursor-pointer hover:text-[#b082e7] ${ active === item.id ? 'active' : '' }`}
                   key={item.id}
                   onClick={ () => setActive(item.id) }
                 >
@@ -45,7 +46,7 @@ const Menu = memo(() => {
           }
         </ul>
       </nav>
-    </div>
+    </AppWrap>
   )
 })
 
